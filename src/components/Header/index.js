@@ -2,9 +2,9 @@ import React from 'react';
 import './header.css'; 
 
 const Header = () => (
-	<React.Fragment>
+	<header className='header'>
 		<h1>Birth Meter</h1>
-	</React.Fragment>
+	</header>
 )
 
 export default Header;
