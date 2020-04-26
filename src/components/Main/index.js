@@ -1,17 +1,31 @@
-import React from 'react';
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
 import './main.css';
 
 import MonthsList from '../MonthsList';
 import PeopleList from '../PeopleList';
+import {startGetPeople} from '../../actions/getPeople';
 
-const Main = () => (
-	<main className='main'>
-		<h2>Main Component</h2>
-		<div className='main__container'>
-			<MonthsList />
-			<PeopleList />
-		</div>
-	</main>
-)
+class Main extends Component {
 
-export default Main;
+	componentDidMount(){
+		this.props.startGetPeople();
+	}
+
+	render(){
+		return (
+			<main className='main'>
+				<div className='main__container'>
+					<MonthsList />
+					<PeopleList />
+				</div> 
+			</main>
+  	)
+	} 
+}
+
+const mapDispatchToProps = (dispatch) => ({
+	startGetPeople: () => dispatch(startGetPeople())
+})
+
+export default connect(undefined, mapDispatchToProps)(Main);

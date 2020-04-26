@@ -3,7 +3,6 @@ import './monthsList.css';
 
 const MonthsList = () => (
 	<section className='main__months'>
-		<h2>Months List!</h2>
 		<ul className='months__list'>
 			<li className='list__item'>
 				January

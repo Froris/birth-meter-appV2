@@ -1,0 +1,111 @@
+.months__list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 30px;
+}
+
+.months__list .list__item {
+  text-align: center;
+  font-size: 2.3rem;
+  border: 4px solid rgb(59, 59, 59);
+  border-radius: 8px;
+}
+
+.months__list .list__item:hover.low {
+  background-color: grey;
+  box-shadow: 0 0 2px 1px gray;
+}
+.months__list .list__item:hover.little {
+  background-color: rgb(54, 101, 255);
+  box-shadow: 0 0 6px 2px rgb(54, 101, 255);
+  color: white;
+}
+.months__list .list__item:hover.medium {
+  background-color: greenyellow;
+  box-shadow: 0 0 6px 2px greenyellow;
+  color: black;
+}
+.months__list .list__item:hover.high {
+  background-color: tomato;
+  box-shadow: 0 0 6px 2px tomato;
+  color: white;
+}
+
+@media screen and (min-width: 325px){
+  .main__months {
+ 		width: 30%;  	
+  	margin-top: 5px; 
+    padding-right: 15px;
+    border-right: 2px solid rgb(89, 205, 247);
+  }
+
+	.months__list {
+		height: 100%;
+	  padding: 5px;
+	}
+
+  .months__list .list__item {
+    margin: 5px;
+    width: 16vw;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-width: 1px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .main__months {
+  	width: 22%;
+  }
+
+  .months__list .list__item {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .main__months {
+  	margin-top: 25px;
+  	padding-left: 10px;
+  	width: 20%;
+  }
+
+  .months__list .list__item {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .main__months {
+  	margin-top: 25px;
+  	padding-left: 30px;
+  	padding-right: 5px;
+  	width: 25%;
+  }
+
+  .months__list {
+  	height: 50vh;
+  }
+
+  .months__list .list__item {
+    font-size: 1.2rem;
+    width: 10vw;
+	  margin: 10px 0;
+	  padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1600px){
+  .months__list {
+  	height: 45vh;
+  }
+
+  .months__list .list__item {
+  	font-size: 1.5rem;
+  }
+}

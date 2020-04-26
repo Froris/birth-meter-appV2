@@ -1,0 +1,37 @@
+.main__people {
+  margin-right: auto;
+}
+
+.people__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 325px){
+  .main__people {
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .people__list .list__item {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 1024px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}
+
+@media screen and (min-width: 1600px){
+
+}
