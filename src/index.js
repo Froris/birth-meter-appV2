@@ -7,7 +7,7 @@ import Main from './components/Main';
 import configureStore from './store/configureStore';
 
 const store = configureStore();
-store.subscribe(() => console.log(store.getState()));
+store.subscribe(() => console.log('Store subscribe:', store.getState()));
 
 const App = () => (
 	<Provider store={store}>
