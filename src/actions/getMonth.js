@@ -5,7 +5,7 @@ const getMonth = (month) => ({
 
 export const startGetMonth = (e) => (dispatch) => {
 	if(e.target.className === 'list__item'){
-		const month = e.target.innerHTML
+		const month = e.target.id
 		dispatch(getMonth(month))
 	}
 }

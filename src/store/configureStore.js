@@ -9,7 +9,7 @@ const composeEnchancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 export default () => {
   const store = createStore(
   	combineReducers({
-  		peoplesList: peopleListReducer,
+  		peopleList: peopleListReducer,
   		month: monthsReducer
   	}),
   	

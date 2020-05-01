@@ -7,7 +7,7 @@ const PeopleList = (props) => (
 			props.filteredList.map((item, index) => (
 			  <li className='list__item' key={index}>
 				  <h3>{item.name}</h3>
-				  <p>{item.age}</p>
+				  <p>{item.DOB}</p>
 			  </li>		
 			))
 		}
