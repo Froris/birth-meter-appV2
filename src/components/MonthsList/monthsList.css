@@ -89,7 +89,7 @@
   }
 
   .months__list {
-  	height: 50vh;
+  	height: 70vh;
   }
 
   .months__list .list__item {
@@ -99,6 +99,7 @@
 	  padding: 10px 0;
   }
 }
+
 
 @media screen and (min-width: 1600px){
   .months__list {

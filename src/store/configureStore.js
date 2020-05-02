@@ -14,7 +14,7 @@ export default () => {
   	}),
   	
     composeEnchancers(applyMiddleware(thunk))
-  )
+  );
 
-  return store;
-}
+  return store; 
+};

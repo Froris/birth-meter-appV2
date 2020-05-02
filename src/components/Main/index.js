@@ -13,7 +13,7 @@ class Main extends Component {
 		return (
 			<main className='main'>
 				<div className='main__container'>
-					<MonthsList getMonth={this.props.startGetMonth}/>
+					<MonthsList getMonth={this.props.startGetMonth} filteredList={this.props.filteredList}/>
 					<PeopleListContainer filteredList={this.props.filteredList}/>
 				</div> 
 			</main>
@@ -27,7 +27,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
 	// startGetPeople: () => dispatch(startGetPeople())
-	startGetMonth: (e) => dispatch(startGetMonth(e))
+	startGetMonth: (e) => dispatch(startGetMonth(e)) 
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);

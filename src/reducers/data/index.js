@@ -124,5 +124,33 @@ export default () => (
 			name: 'Nelson',
 			DOB: '1992-10-11'
 		},
+				{
+			name: 'Kolya',
+			DOB: '1992-08-13'
+		},
+		{
+			name: 'Andrew',
+			DOB: '1992-09-13'
+		},
+		{
+			name: 'Sasha',
+			DOB: '1992-04-13'
+		},
+		{
+			name: 'Ivan',
+			DOB: '1992-05-13'
+		},
+		{
+			name: 'Vasya',
+			DOB: '1992-08-13'
+		},
+		{
+			name: 'Nekit',
+			DOB: '1992-08-23'
+		},
+		{
+			name: 'Gordon',
+			DOB: '1992-08-28'
+		},
 	]
-)
+);
