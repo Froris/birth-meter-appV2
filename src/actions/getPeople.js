@@ -1,22 +1,21 @@
-// Т.К. сервер упал, функция с запросом не нужна
+import { firebase } from "../firebase/firebase";
 
-// import axios from 'axios';
+const peopleFetchDataSucces = (people) => ({
+  type: "PEOPLE_FETCH_DATA_SUCCES",
+  people,
+});
 
-// const url = 'https://yalantis-react-school.herokuapp.com/api/task0/users';
+const startPeopleReciving = () => {
+  return (dispatch) => {
+    firebase
+      .database()
+      .ref("peopleList")
+      .once("value")
+      .then((data) => {
+        const people = data.val();
+        dispatch(peopleFetchDataSucces(people));
+      });
+  };
+};
 
-// export const startGetPeople = () => async(dispatch) => {
-// 	try {
-// 		const response = await axios.get(url);
-// 		const peopleList = response.data;
-// 		dispatch(fetchPeopleSuccess(peopleList))
-// 	} catch(e){
-// 		console.log(e)
-// 	}
-// }
-
-// export function fetchPeopleSuccess(people){
-// 	return {
-// 		type: 'PEOPLE_FETCH_DATA_SUCCES',
-// 		payload : people
-//   }
-// }
+export default startPeopleReciving;
